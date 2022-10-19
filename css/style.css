@@ -1,0 +1,336 @@
+@font-face {
+    font-family:"Lato";
+    src: url("../fonts/Lato/Lato-Black.woff2") format("woff2"), url("../fonts/Lato/Lato-Black.woff") format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+@font-face {
+    font-family:"Lato";
+    src: url("../fonts/Lato/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato/Lato-Bold.woff") format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+@font-face {
+    font-family:"Lato";
+    src: url("../fonts/Lato/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato/Lato-Regular.woff") format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+body {
+    font-family: 'Lato';
+    color: #424551;
+}
+
+[class*="__container"] {
+    margin: 0 auto;
+    max-width: 1230px;
+    padding-top: 120px;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
+    color: #1E212C;
+    margin-bottom: 40px;
+}
+
+.title-page, .title-page2 {
+    margin-bottom: 50px;
+}
+
+.title-page p, .title-page2 p {
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.title-3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #1E212C;
+    margin-bottom: 25px;
+}
+.page-text {
+    max-width: 600px;
+    margin-bottom: 180px;
+    line-height: 1.6;
+}
+.page-text li {
+    margin-bottom: 4px;
+    padding-left: 32px;
+    min-height: 30px; 
+    background: url("../img/icons/Vector.jpg") 0 6px no-repeat;
+}
+
+.page-text li:nth-child(odd):hover {
+    color: red;
+}
+
+.page-text li:nth-child(even):hover {
+    color: rgb(16, 180, 79);
+}
+
+.work {
+    padding-top: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1E212C;
+    margin-top: 10px;
+}
+.work-1 {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
+    color: #1E212C;
+    margin-bottom: 15px;
+}
+.work-2 p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #787A80;
+    margin-bottom: 32px;
+}
+.work-2 li {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #424551;
+    margin-bottom: 4px;
+}
+
+.list li:first-of-type::before {
+    background: url('../img/icons/Star.svg') 0 0 no-repeat;
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 10px;
+	transition: all 0.8s ease 0s;
+}
+
+.list li:nth-child(2)::before {
+    background: url('../img/icons/Play.svg') 0 0 no-repeat;
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 10px;
+	transition: all 0.8s ease 0s;
+}
+
+.list li:last-of-type::before {
+    background: url('../img/icons/Profile.svg') 0 0 no-repeat;
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 10px;
+	transition: all 0.8s ease 0s;
+}
+
+ul li:hover::before{
+	transform: scale(1.5);
+}
+
+.punkt__container {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+
+.game__container{
+    border: 5px solid rgb(4, 189, 206);
+    box-shadow: -8px -8px 20px #238676;
+    height: 600px;
+    max-width: 700px;
+    background: url("../img/2.jpg") 0 0 no-repeat ;
+}
+
+.start {
+    overflow: hidden;
+    border: 10px dashed rgba(158, 13, 13, 1);
+    border-radius: 75px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #7c0909;
+    display: inline;
+}
+.blok-1 {
+
+    margin-left: 20px;
+    color: #7c0909;
+    width: 640px;
+    height: 60px;
+    border: 2px;
+    background-color: aliceblue;
+    opacity: 0;
+    }
+    
+
+.blok-1:hover {
+    padding-right: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.blok-1:hover+div {
+    padding-right: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.blok-2 {
+    margin-left: 600px;
+    width: 60px;
+    height: 150px;
+    border: 2px;
+    background-color: aliceblue;
+    opacity: 0;
+}
+
+.blok-2:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.blok-2:hover+div {
+    opacity: 1;
+    visibility: visible;
+}
+
+.blok-3 {
+    margin-left: 360px;
+    width: 300px;
+    height: 60px;
+    border: 2px;
+    background-color: aliceblue;
+    opacity: 0;
+}
+
+.blok-3:hover {
+    opacity: 1;
+    visibility: visible;
+}
+.blok-3:hover+div {
+    opacity: 1;
+    visibility: visible;
+}
+
+.blok-4 {
+    margin-left: 360px;
+    width: 60px;
+    height: 60px;
+    border: 2px;
+    background-color: aliceblue;
+    opacity: 0;
+}
+
+.blok-4:hover {
+    opacity: 1;
+    visibility: visible;
+}
+.blok-4:hover+div {
+    opacity: 1;
+    visibility: visible;
+}
+
+.blok-5 {
+    margin-left: 70px;
+    width: 350px;
+    height: 60px;
+    border: 2px;
+    background-color: aliceblue;
+    opacity: 0;
+}
+
+.blok-5:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.blok-5:hover+div {
+    opacity: 1;
+    visibility: visible;
+}
+.blok-6 {
+    margin-right: 250px;
+    width: 120px;
+    height: 60px;
+    border: 2px;
+    background-color: aliceblue;
+    opacity: 0;
+}
+
+.blok-6:hover {
+    opacity: 1;
+    visibility: visible;
+}
+.blok-6:hover+img {
+    opacity: 1;
+    visibility: visible;
+}
+.img {
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+}
+
+.game__container:hover .block-1{
+	visibility: visible;
+	opacity: 1;
+}
+
+.block-1{
+	opacity: 0;
+	visibility: hidden;}
+
+ul{
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+ul ul{
+    display: none;
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+.punkt__container ul li:hover:not(:last-child) {
+    color: aqua;
+}
+.punkt__container ul li:hover:last-child li {
+    color: rgb(129, 4, 129);
+}
+
+.punkt__container ul li:active {
+    color: red;
+}
+
+a:visited{
+    color: rgb(29, 5, 134);
+}
+
+.footer__container {
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    }
+
+.footer__container p:hover {
+    color: rgb(136, 60, 6);
+    text-shadow: 2px 2px 2px rgb(233, 144, 28);
+    }
+
